@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head> 
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" 
+              rel="stylesheet" 
+              integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" 
+              crossorigin="anonymous">
+    <title>Predict with House Price</title>
+    <style>
+        body {
+        background-image: url(https://www.koreatimes.net/images/attach/139627/20210611-11060129.jpg);
+        background-size: cover;
+        }
+      </style>    
+    </head>
+    <body>
+        <form method = "post" action = '/result'>
+            <div class = 'infotab'>
+                <span style="color: #FFFFFF;">GrLivArea(지상 생활면적(square feet) 최소 500부터)? :</span>
+                <input type ='text' name = 'GrLivArea' size = '20' placeholder= '값을 입력해주세요.'>
+            </div>
+            <div class = 'infotab'>
+                <span style="color: #FFFFFF;">OverallQual(전반적인 퀄리티 0~10)? :</span>
+                <input type ='text' name = 'OverallQual' size = '20' placeholder= '값을 입력해주세요.'>
+            </div>
+            <div class = 'infotab'>
+                <span style="color: #FFFFFF;">화장실 제외 방의 갯수(최소 1부터)? :</span>
+                <input type ='text' name = 'TotRmsAbvGrd' size = '20' placeholder= '값을 입력해주세요.'>
+            </div>
+            <div class ='submitbtn'>
+                <input type = 'submit' value = '예측결과 확인하기'>
+            </div>
+        </form>
+        
+    </body>
+</html>
